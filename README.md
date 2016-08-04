@@ -1,5 +1,3 @@
-# docker-aws-cli
-Simple lightweight docker container for using the AWS CLI client
 # aws-cli
 A simple lightweight docker container for using the AWS CLI client.
 
