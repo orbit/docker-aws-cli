@@ -2,6 +2,8 @@ FROM alpine:3.4
 
 MAINTAINER Orbit Team <orbit-opensource@ea.com>
 
+ENV AWS_CLI_VERSION 1.10.59
+
 RUN apk --update --no-cache add \
     python \
     py-pip \
@@ -9,7 +11,7 @@ RUN apk --update --no-cache add \
     jq \
     less \
     curl \
-    && pip install awscli \
+    && pip install awscli==$AWS_CLI_VERSION \
     && apk del py-pip
 
  ENTRYPOINT ["aws"]
