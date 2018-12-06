@@ -2,7 +2,7 @@ FROM alpine:3.8
 
 MAINTAINER Orbit Team <orbit@ea.com>
 
-ENV AWS_CLI_VERSION 1.16.67
+ENV AWS_CLI_VERSION 1.16.70
 
 RUN apk --update --no-cache add \
     python \
